@@ -13,3 +13,19 @@ We decided to go with G++ in VS Code
   - John realized he probably needs to sign out and sign back in for the PATH change to take effect
   - 2 years later john realized that there's a lot more to this msys stuff and they may not all have the same PATH config so idk what's up with each one, probably not gonna use the msys windows
   
+
+  K But what about using CUDA in WSL?
+
+  make sure you have latest Nvidia Driver
+  wsl --install
+  reboot
+  wsl --install again, should auto install Ubuntu 24 or whatever is latest
+  Set up your username and password
+
+  sudo apt update
+  sudo apt upgrade
+
+  sudo apt install -y build-essential
+
+  got cuda toolkit from here: https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=WSL-Ubuntu&target_version=2.0&target_type=deb_network
+
